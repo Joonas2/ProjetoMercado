@@ -41,6 +41,7 @@ class Mercado:
         except:
             pass
         else:
+            grafico('Funcionarios')
             print('NOME     | CPF     | SALARIO')
             for funcarios in ver_fucionarios_list:
                 print(f'{funcarios[0]} | {funcarios[1]} | {funcarios[2]}')

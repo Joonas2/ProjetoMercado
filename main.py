@@ -15,18 +15,18 @@ while True:
 
         if opcoes_cadastro == 1:
             grafico('Cadastro Funcionarios')
-            nome = input('Nome: ')
-            fone = input('Fone: ')
-            salario = input('Saalario: ')
+            nome = str(input('Nome: '))
+            fone = int(input('Fone: '))
+            salario = float(input('Saalario: '))
             mercado.cadastro_funcionarios(nome, fone, salario)
             grafico('Cadastrando...')
             sleep(1)
 
         else:
             grafico('Cadastrar Clientes')
-            nome = input('Nome: ')
-            cpf = input('CPF: ')
-            telefone = input('Fone: ')
+            nome = str(input('Nome: '))
+            cpf = int(input('CPF: '))
+            telefone = int(input('Fone: '))
             mercado.cadastrar_clientes(nome, cpf, telefone)
             grafico('Cadastrando...')
             sleep(1)
