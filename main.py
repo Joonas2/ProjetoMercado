@@ -34,11 +34,11 @@ while True:
     elif opcoes == 2:
         grafico('Ver Cadastros')
         ver_cadastro()
-        opcoes_ver_cadastro = input('Escolha uma opção: ')
+        opcoes_ver_cadastro = int(input('Escolha uma opção: '))
 
         if opcoes_ver_cadastro == 1:
             mercado.ver_funcionarios()
-        else:
+        elif opcoes_ver_cadastro == 2:
             mercado.ver_cadastro_clientes()
 
     elif opcoes == 3:

@@ -41,8 +41,9 @@ class Mercado:
         except:
             pass
         else:
+            print('NOME     | CPF     | SALARIO')
             for funcarios in ver_fucionarios_list:
-                print(funcarios)
+                print(f'{funcarios[0]} | {funcarios[1]} | {funcarios[2]}')
 
 
     def ver_cadastro_clientes(self):
